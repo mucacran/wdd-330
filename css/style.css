@@ -1,0 +1,52 @@
+body{
+    background-color: white;
+}
+
+
+/* about text */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+text-align: center;
+}
+
+.d-grid {
+    display: grid;
+}
+
+/* @media smoll */
+@media (min-width: 576px) {
+    .d-sm-grid {
+        display: grid;
+    }
+}
+
+/* @media medium */
+@media (min-width: 768px) {
+    .d-md-grid {
+        display: grid;
+    }
+}
+
+/* @media large */
+@media (min-width: 992px) {
+    .d-lg-grid {
+        display: grid;
+    }
+}
+
+/* @media estra largo */
+@media (min-width: 1200px) {
+    .d-xl-grid {
+        display: grid;
+    }      
+}
+
+/* @media estra extra largo */
+@media (min-width: 1400px) {
+    .d-xxl-grid {
+        display: grid;
+    }
+}
