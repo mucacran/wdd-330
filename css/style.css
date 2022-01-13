@@ -4,6 +4,8 @@ body{
 
 *{
     font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /* about text */
@@ -62,6 +64,40 @@ text-align: center;
     font-size: 1rem;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+.bg-amarillo{
+    background-color: #f2d742;
+}
+
+.bg-gris{
+    background-color: #3a373b;
+}
+
+.bg-blanco{
+    background-color: white;
+}
+
+.c-amarillo{
+    color: #f2d742;
+}
+
+.c-gris{
+    color: #3a373b;
+}
+
+.c-blanco{
+    color: white;
 }
 
 .btn-primary {
