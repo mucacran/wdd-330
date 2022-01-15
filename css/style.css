@@ -21,27 +21,17 @@ text-align: center;
     display: grid;
 }
 
+.d-none {
+    display: none;
+}
+
 .container{
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .container80{
     width: 80%;
 }
-
-.row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -.5);
-    margin-left: calc(var(--bs-gutter-x) * -.5);
-  }
 
 /*botones*/
 .btn {
@@ -80,11 +70,15 @@ nav.main ul{
     list-style-type: none;
     display: grid;
 
-    grid-template-columns: 3fr 80% 3fr;
-    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+
 
     width: 100%;
 
+}
+
+nav.main ul li:last-child{
+    text-align: right;
 }
 
 .centrarAncho{
@@ -94,6 +88,10 @@ nav.main ul{
 nav.main ul li a{
     color: white;
     text-decoration: none;
+}
+
+nav.main ul li a:hover{
+    color: #f2d742;
 }
 
 .bg-amarillo{
@@ -126,17 +124,88 @@ nav.main ul li a{
     border-color: #f2d742;
 }
 
+.btn-secundary {
+    color: #f2d742;
+    background-color: #3a373b;
+    border-color: #3a373b;
+}
+
 .btn-primary:hover {
     color: #fff;
     background-color: #3a373b;
     border-color: #3a373b;
 }
 
+.btn-secundary:hover {
+    color: white;
+}
+
+/*bordes*/
+.border {
+    border: 1px solid #dee2e6 !important;
+}
+
+/*borde redondos*/
+.rounded {
+    border-radius: 0.25rem !important;
+  }
+
+/*Fila*/
+.row{
+    padding: 50px 0;
+}
+
+/*espacios padding*/
+.py-50px{
+    padding: 50px 0;
+}
+
+.pb-50px{
+    padding-bottom: 50px;
+}
+
+.botonMostrar{
+    border-bottom: 1px solid #dee2e6 ;
+}
+
+.botonMostrar:last-of-type{
+    border-bottom: none;
+}
+
+.botonMostrar h2{
+    cursor: pointer;
+}
+
+.p{
+    padding: 15px;
+}
+
+.mystyle {
+    padding-bottom: 15px;
+    transition: all 0.5s;
+  }
+
+.mystyle+div{
+    display: block;
+}
 /* @media smoll */
 @media (min-width: 576px) {
     .d-sm-grid {
         display: grid;
     }
+
+    nav.main ul{
+        list-style-type: none;
+        display: grid;
+    
+        grid-template-columns: auto auto;
+    
+    
+        width: 100%;
+    
+    }
+
+    
 }
 
 /* @media medium */
