@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 2 </title>
+</head>
+<body>
+    <div>
+        <h1>Ponder: Team Activity</h1>
+        <div>
+            <h2>Call the function when the button is pressed</h2>
+            <input type="text" name="valor" id="valor">
+            <button type="submit" onclick="resUno()">submit</button>
+            <div id="resUno"></div>
+        </div>
+        <div>
+            <h2> It should take that number and sum all</h2>
+            <input type="text" name="valorSoma" id="valorSuma">
+            <button type="submit" onclick="sumarInterbalo()">submit</button>
+            <div id="resDos"></div>
+        </div>
+
+        <div>
+            <h2> Create an adding machine</h2>
+            <input type="text" name="num" id="num">
+            <input type="text" name="num1" id="num1">
+            <button type="submit" onclick="sum()">+</button>
+            <button type="submit" onclick="rest()">-</button>
+            <button type="submit" onclick="multipl()">*</button>
+            <div id="resTres"></div>
+        </div>
+    </div>
+    <script>
+        function resUno(){
+            var num = document.querySelector("#valor").value;
+            if(num != NaN){
+                document.querySelector("#resUno").innerHTML = num;
+            }
+        }
+
+        function sumarInterbalo(){
+            var num = parseInt(document.querySelector("#valorSuma").value);
+            var numRes = 0;
+            if(num == NaN){
+                document.querySelector("#resDos").innerHTML = numRes;
+            }else{
+                for(var i = 1; i <= num ; i++){
+                    numRes = i + numRes;
+                }
+                document.querySelector("#resDos").innerHTML = numRes;
+            }
+        }
+
+        function sum(){
+            var num = parseInt(document.querySelector("#num").value);
+            var num1 = parseInt(document.querySelector("#num1").value);
+
+            var total = sumTotal(num,num1);
+
+            document.querySelector("#resTres").innerHTML = total;
+        }
+
+        function rest(){
+            var num = parseInt(document.querySelector("#num").value);
+            var num1 = parseInt(document.querySelector("#num1").value);
+
+            var total = restTotal(num,num1);
+
+            document.querySelector("#resTres").innerHTML = total;
+        }
+
+        function multipl(){
+            var num = parseInt(document.querySelector("#num").value);
+            var num1 = parseInt(document.querySelector("#num1").value);
+
+            var total = multiplTotal(num,num1);
+
+            document.querySelector("#resTres").innerHTML = total;
+        }
+
+        function sumTotal(num,num1){
+            return num + num1;
+        }
+
+        function restTotal(num,num1){
+            return num - num1;
+        }
+
+        function multiplTotal(num,num1){
+            return num * num1;
+        }
+    </script>
+</body>
+</html>
