@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objetos</h1>
+    <form action="">
+
+    
+    <input type="text" name="nombre" id="nombre" pattern="[A-Z]+[a-z]" placeholder="nombre">
+    <input type="text" name="apellido" id="apellido" pattern="[A-Z]+[a-z]" placeholder="apellido">
+    <input type="text" name="edad" id="edad" pattern="[0-9]+" placeholder="edad" validate>
+
+    <input type="button" value="Send" onclick="imprimirNOmbre()">
+</form>
+    <div id="puesto"></div>
+
+
+    <h2>Que aprendi aqui</h2>
+    <p>Yo aprendi aqui, que cuando creo un metodo, a la hora de llamar a ese metodo que es una funcion dentro de un objeto, tengo que llamarlo con los parentesis, osea que debo escribir asi "persona.edad()" y yo estaba escribiendo "persona.edad" y no estaba teniendo ningun resultado</p>
+    <p>Tambien aprendi haciendo el boton que no puedo declarar una nueva variable con el mismo nombre del objeto, eso es lo que me estaba pasando en la funcion "imprimirNOmbre()", yo estaba asignano a la bariable persona el objeto persona y estaba obteniedo un error, asi que le cambie el nombre de la variable a "personaImpresa" y le asigne el objeto persona en un array</p>
+
+
+    <h3>Ejercicio calculadora</h3>
+    <input type="text" name="valor1" id="valor1">
+    <input type="text" name="valor2" id="valor2">
+    <input type="button" value="+" onclick="calculadora.resultadoSum()">
+    <input type="button" value="*" onclick="calculadora.resultadoMul()">
+
+    <div id="resultado"></div>
+
+    <h3>Que aprendi</h3>
+    <p>Aqui aprendi dos formas de llamar al objeto y de como inbocar un objeto dentro de un "onclick", </p>
+    <p>Lo que paso es que cuando use el signo "+" dentro de el metodo calculadora.sum</p>
+
+
+    <script src="js/nomprepersona.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
