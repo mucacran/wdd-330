@@ -198,14 +198,21 @@ nav.main ul li a:hover{
     padding: 15px;
 }
 
-.mystyle {
-    
-    transition: all 0.5s;
-  }
 
-.mystyle+div{
-    display: block;
+
+.muestralo.mystyle{
+    max-height:0;
 }
+
+.muestralo{
+    max-height:300px;
+
+    /*transition: all 0.5s;*/
+    transition:max-height 0.3s ease-out; 
+}
+
+
+
 /* @media smoll */
 @media (min-width: 576px) {
     .d-sm-grid {
