@@ -151,12 +151,12 @@ nav.main ul li a:hover{
 
 /*bordes*/
 .border {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #dee2e6;
 }
 
 /*borde redondos*/
 .rounded {
-    border-radius: 0.25rem !important;
+    border-radius: 0.25rem;
   }
 
 /*Fila*/
@@ -200,16 +200,30 @@ nav.main ul li a:hover{
 
 
 
-.muestralo.mystyle{
-    max-height:0;
-}
+/*cerrado*/
+.p.bg-amarillo.c-gris.border.rounded{
+    overflow: hidden;
 
-.muestralo{
-    max-height:300px;
-
-    /*transition: all 0.5s;*/
-    transition:max-height 0.3s ease-out; 
-}
+    border: 0;
+    padding: 0;
+height: 0;
+  padding: 0;
+  transform: scaleY(0);
+  
+    /*transition: background-color 5ms;*/
+    transition: all 0.5s;
+  }
+  
+  
+  /*abierto*/
+.mystyle{
+    height: max-content !important;
+    overflow: auto !important;
+    border: 1px solid #dee2e6 !important;
+    padding: 15px !important;
+ 
+    transform: scaleY(1) !important;
+  }
 
 
 

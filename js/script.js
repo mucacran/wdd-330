@@ -15,8 +15,9 @@
 
     //event.target.parentElement.classList.toggle("mystyle");
 
-    var divs = event.target.parentElement;
-    var div = divs.querySelector('.p.bg-amarillo.c-gris.border.rounded');
+    //var divs = event.target.parentElement;
+    //var div = divs.querySelector('.p.bg-amarillo.c-gris.border.rounded');
+    var div = this.querySelector('div');
     /*div.classList.forEach(elemento => {
       if(elemento == 'd-none'){
         div.classList.remove('d-none');
@@ -28,17 +29,19 @@
     }
 
     );*/
-    div.classList.toggle("d-none");
-    if(div.classList.toggle("d-none")){
+    div.classList.toggle("mystyle");
+
+    /*if(div.classList.toggle("d-none")){
         console.log('aqui dio ' + div.classList.toggle("d-none"));
         div.classList.remove('mystyle');
     }else{
       console.log('aqui dio ' + div.classList.toggle("d-none"));
       
       div.classList.add('mystyle');
-    }
+    }*/
 
   }
 
 
   //addEventListener
+
