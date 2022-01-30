@@ -40,10 +40,19 @@ function makeHero(event) {
 
     hero.name = form2.heroName.value; // create a name property based on the input field's value
 
-    hero.realName = form.realName.value;
+    hero.realName = form2.realName.value;
 
     console.log(hero.realName);
 
     alert(JSON.stringify(hero)); // convert object to JSON string and display in alert dialog
     return hero;
 }
+
+/*hero.powers = [];
+for (let i=0; i < document.forms['hero'].powers.length; i++) {
+    if (document.forms['hero'].powers[i].checked) {
+        hero.powers.push(form.powers[i].value);
+    }
+}*/
+hero.powers = [...form2.powers].filter(box => box.checked).map(box => box.value);
+
