@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exite una funcion</title>
+</head>
+<body>
+    <div id="exite">Hola "existe"</div>
+    <div id="resultado">Hola "resultado"</div>
+
+
+    <div class="text-center pb-50px">
+        <a href="index.html" class="btn btn-secundary">return</a>
+    </div>
+    <script>
+        (function(){//(function(){}());
+            'user strict'
+            //declarando DOM's
+            const div = document.getElementById('exite');
+            const div1 = document.getElementById('resultado');
+
+
+
+            //metodo
+
+            const metodoUno ={
+                holamundo(){
+                    div1.innerHTML = 'Esto es real';
+                }
+            }
+
+            function hola(){
+                div.innerHTML = 'hola';
+            }
+
+            function chao(){
+                div.innerHTML = 'chao';
+            }
+
+            if(chao){
+                hola();
+                div1.innerHTML = 'Es verdadeo lo q sucede';
+            }else{
+                chao();
+                //metodoUno.holamundo()
+            }
+        //});
+    }());//no entirndo por que los parentesis adicionales ()
+
+    if (window.holoDeck) {
+    virtualReality.activate();
+}
+    </script>
+</body>
+</html>
