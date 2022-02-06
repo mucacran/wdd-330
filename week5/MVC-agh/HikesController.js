@@ -12,10 +12,34 @@ export default class HikesController {
   
   showHikeList() {
     //  this will get called each time we need to display our full hike list. It should grab the list of hikes from the Model, and then send them to the view.
+    const hikeListElement = document.getElementById("hikes");
+  hikeListElement.innerHTML = "";
+  renderHikeList(hikeList, hikeListElement);
+  }
+  renderHikeList(hikes, parent) {
+    hikes.forEach(hike => {
+      parent.appendChild(renderOneHike(hike));
+    });
   }
 
   showOneHike(hikeName) {
     // use this when you need to show just one hike...with full details
+    const item = document.createElement("li");
+
+  item.innerHTML = ` <h2>${hike.name}</h2>
+        <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
+        <div>
+                <div>
+                    <h3>Distance</h3>
+                    <p>${hike.distance}</p>
+                </div>
+                <div>
+                    <h3>Difficulty</h3>
+                    <p>${hike.difficulty}</p>
+                </div>
+        </div>`;
+
+  return item;
     
   }
   addHikeListener() {
