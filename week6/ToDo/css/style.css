@@ -1,0 +1,52 @@
+.eliminar,
+.done{
+    padding: 15px;
+    color: white;
+    display: block;
+    box-sizing: border-box;
+    text-align: center !important;
+    margin: 0;
+    height: 48.5px;
+}
+
+.eliminar{
+    background-color: red;
+    width: 10%;
+}
+
+.done{
+    background-color: green;
+    width: 30%;
+}
+
+#linkList li>div{
+    display: flex;
+    border-bottom: 1px solid #333333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#linkList li div:first-child{
+    
+}
+#linkList li div:last-child{
+   
+}
+
+#linkList li div p{
+    padding: 5px;
+   
+    color: black;
+    
+    margin: 0;
+}
+
+.contenidoList{
+    width: 60%;
+    overflow: auto;
+    height: 48.5px;
+}
+
+#listActividades{
+    margin-bottom: 15px;
+}

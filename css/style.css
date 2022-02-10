@@ -6,6 +6,8 @@ body{
     font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
+
+    box-sizing: border-box;
 }
 
 /* about text */
@@ -225,7 +227,10 @@ height: 0;
     transform: scaleY(1) !important;
   }
 
-
+button{
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
 
 /* @media smoll */
 @media (min-width: 576px) {

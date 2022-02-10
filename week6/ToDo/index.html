@@ -6,16 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>toDO</title>
 
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <input type="text" name="itemListToDo" id="itemListToDo" placeholder="valor" value="">
-    <button type="submit" onclick="guardar()">Añadir</button>
+    <header class="container bg-gris">
+        <nav class="navbar container80 main">
+            <ul>
+                <li><a href="../index.html">My Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main role="main" class="bg-amarillo container ">
+        <div class="row pb-15px">
+            <div class="container80 centrarAncho pb-15px">
+                <h1 class="text-uppercase">To Do</h1>    
+            </div>
+            <div class="container80 centrarAncho pb-15px">
+                <input class="container p" type="text" name="itemListToDo" id="itemListToDo" placeholder="valor" value="">
+            </div>
+            <div class="container80 centrarAncho pb-15px text-center">
+                <button type="submit" onclick="guardar()">Añadir</button>
+                <button type="submit" onclick="borrarTodo()">Borrar todo</button>
+                <button type="submit" onclick="mostrarTodaLaLista()">Mostrar toda la lista</button>
+            </div>
+        </div>
+    </main>
+
+
+    
 
     <div id="listActividades">
         <ul id="linkList">
 
         </ul>
     </div>
+
+    <div class="text-center pb-50px">
+        <a href="../index.html" class="btn btn-secundary">return</a>
+    </div>
+
+    <footer class="container bg-gris">
+        <div class="container80 centrarAncho py-50px">
+            <h3 class="c-blanco text-center">
+                Web Frontend Development II
+            </h3>
+        </div>
+    </footer>
 </body>
 </html>
