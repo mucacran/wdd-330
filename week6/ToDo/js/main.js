@@ -11,9 +11,10 @@ function creandoLi(listItemTodo){
     const li = document.createElement('li');
     const div = document.createElement('div');
 
+    //botones de eliminar y hecho
     const i = document.createElement('i');
     i.setAttribute('class','eliminar');
-    i.setAttribute('onclick','eliminar(event)');
+    i.setAttribute('onclick','');
     i.innerHTML = 'X';
 
     const ii = document.createElement('i');
@@ -70,9 +71,10 @@ function borrarTodo(){
     ul.innerText = '';//NO ERA LO MISMO QUE PONER innerHTML
 }
 
-function eliminar(event){
-    let div = event.path[1].querySelector('div > p');
-    console.log(div.innerText);
+function eliminar(){
+    //let div = event.path[1].querySelector('div > p');
+    //console.log(div.innerText);
+    console.log('hice click');
 
     
 }
@@ -81,5 +83,13 @@ function hecho(event){
     console.log(event.path[1]);
 }
 
+var eliminar = document.getElementsByClassName('eliminar');
+Array.from(eliminar).forEach(elemento => console.log(elemento));
+Array(eliminar).forEach(e => console.log(e));
+eliminar[0].addEventListener('click',function(event){
+    //event.target[1].querySelector('div > p');
+    //console.log(div.innerText);
+    console.log(event)
+});
 //https://www.youtube.com/watch?v=2hJ1rTANVnk
 //https://www.youtube.com/watch?v=UHaWGC5HCqI
