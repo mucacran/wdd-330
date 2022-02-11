@@ -93,3 +93,4 @@ eliminar[0].addEventListener('click',function(event){
 });
 //https://www.youtube.com/watch?v=2hJ1rTANVnk
 //https://www.youtube.com/watch?v=UHaWGC5HCqI
+//https://stackoverflow.com/questions/3871547/js-iterating-over-result-of-getelementsbyclassname-using-array-foreach
