@@ -57,7 +57,7 @@ function guardar(){
         creandoLi(listItemTodo);
     }
     else{
-        alert('Error: llene el campo antes de hacer click');
+        alert('Error: llene el campo antes de hacer click');    
     }
 
     
