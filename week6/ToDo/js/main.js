@@ -14,12 +14,12 @@ function creandoLi(listItemTodo){
     //botones de eliminar y hecho
     const i = document.createElement('i');
     i.setAttribute('class','eliminar');
-    i.setAttribute('onclick','');
+    //i.setAttribute('onclick','');
     i.innerHTML = 'X';
 
     const ii = document.createElement('i');
     ii.setAttribute('class','done');
-    ii.setAttribute('onclick','hecho(event)');
+    //ii.setAttribute('onclick','');
     ii.innerHTML = 'Done';
 
     
@@ -75,8 +75,6 @@ function eliminar(){
     //let div = event.path[1].querySelector('div > p');
     //console.log(div.innerText);
     console.log('hice click');
-
-    
 }
 
 function hecho(event){
@@ -84,13 +82,23 @@ function hecho(event){
 }
 
 var eliminar = document.getElementsByClassName('eliminar');
-Array.from(eliminar).forEach(elemento => console.log(elemento));
-Array(eliminar).forEach(e => console.log(e));
-eliminar[0].addEventListener('click',function(event){
-    //event.target[1].querySelector('div > p');
-    //console.log(div.innerText);
-    console.log(event)
+Array.from(eliminar).forEach(e => {
+    var num = 0;
+    var padre = e.parentNode.querySelector('div p');
+    var contItem = padre.innerText;
+    console.log(contItem);
+    num = num + 1;
 });
+
+/*
+var hecho = document.getElementsByClassName('done');
+Array.from(hecho).forEach(e => {
+    var padre = e.parentNode.querySelector('div p');
+    var contItem = padre.innerText;
+    console.log(contItem);
+});*/
+
+
 //https://www.youtube.com/watch?v=2hJ1rTANVnk
 //https://www.youtube.com/watch?v=UHaWGC5HCqI
 //https://stackoverflow.com/questions/3871547/js-iterating-over-result-of-getelementsbyclassname-using-array-foreach
