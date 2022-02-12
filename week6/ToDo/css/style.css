@@ -16,8 +16,9 @@
 }
 
 .done{
-    background-color: green;
+    background-color: #7CFC00;
     width: 30%;
+    color: #333333;
 }
 
 #linkList li>div{
@@ -27,11 +28,13 @@
     box-sizing: border-box;
 }
 
-#linkList li div:first-child{
-    
+.completada{
+    background-color: #8f8f8f;
+    text-decoration:line-through
 }
-#linkList li div:last-child{
-   
+
+.completada i+i{
+    background-color:green;
 }
 
 #linkList li div p{

@@ -25,6 +25,11 @@ function mensajeEliminar(event){
     }
 }
 
+function completada(event){
+    //div.classList.toggle("mystyle");
+    event.target.parentNode.classList.toggle("completada");
+}
+
 function creandoLi(listItemTodo){
     const ul = document.getElementById('linkList');
     const li = document.createElement('li');
@@ -38,7 +43,7 @@ function creandoLi(listItemTodo){
 
     const ii = document.createElement('i');
     ii.setAttribute('class','done');
-    //ii.setAttribute('onclick','');
+    ii.setAttribute('onclick','completada(event)');
     ii.innerHTML = 'Done';
 
     
@@ -75,7 +80,7 @@ function guardar(){
     var validarItem = /\s\s/;
 
     if (validarItem.test(listItemTodo)){
-        alert('vacio');
+        alert('Error');
         return;
     }
 
@@ -97,6 +102,7 @@ function guardar(){
         alert('Error: llene el campo antes de hacer click');    
     }
 
+
     
 }
 
@@ -106,10 +112,6 @@ function borrarTodo(){
     document.querySelector('#itemListToDo').value = '';
 
     ul.innerText = '';//NO ERA LO MISMO QUE PONER innerHTML
-}
-
-function hecho(event){
-    console.log(event.path[1]);
 }
 
 /*

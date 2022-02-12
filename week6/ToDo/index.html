@@ -29,10 +29,14 @@
             <div class="container80 centrarAncho pb-15px">
                 <input class="container p" type="text" name="itemListToDo" id="itemListToDo" placeholder="valor" value="">
             </div>
-            <div class="container80 centrarAncho pb-15px text-center">
-                <button type="submit" onclick="guardar()">Añadir</button>
+            <div class="container80 centrarAncho text-center">
+                <button type="submit" onclick="guardar()">Add</button>
                 <button type="submit" onclick="borrarTodo()">Borrar todo</button>
                 <button type="submit" onclick="mostrarTodaLaLista()">Mostrar toda la lista</button>
+            </div>
+            <div class="container80 centrarAncho pb-15px text-center">
+                <button type="submit" onclick="completadas()">Completed</button>
+                <button type="submit" onclick="incompletas()">Active</button>
             </div>
         </div>
     </main>
