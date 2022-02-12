@@ -30,6 +30,32 @@ function completada(event){
     event.target.parentNode.classList.toggle("completada");
 }
 
+function completadas(){
+    //var div = document.querySelectorAll('div.itemToDo.completada');
+    var div = document.getElementsByClassName('completada');
+    var ul = document.querySelector('#linkList');
+
+    const divS= document.querySelectorAll('#linkList li>div');
+    // Array.from(divS).forEach(e => {
+    //     if(e.childNodes.className('completada')){
+    //         console.log('true');
+    //     }else{console.log('falso');}
+
+    // })
+    for(var i = 0;i < divS.length; i++ ){
+        if(!divS[i].classList.contains('completada')){
+            divS[i].parentElement.remove();
+        }
+    }
+    
+    
+    Array.from(div).forEach(e => {
+        const li = document.createElement('li');
+        ul.appendChild(li);
+        li.appendChild(e);
+    });
+}
+
 function creandoLi(listItemTodo){
     const ul = document.getElementById('linkList');
     const li = document.createElement('li');
@@ -46,7 +72,8 @@ function creandoLi(listItemTodo){
     ii.setAttribute('onclick','completada(event)');
     ii.innerHTML = 'Done';
 
-    
+    //div.setAttribute('class','itemToDo');
+
     div.innerHTML = '<div class="contenidoList"><p>' + listItemTodo + '</p></div>';
     div.appendChild(i);
     div.appendChild(ii);
