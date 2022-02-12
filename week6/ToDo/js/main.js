@@ -1,11 +1,29 @@
-if(localStorage.getItem('nombreList') != null){
-    var datosViejos = JSON.parse(localStorage.getItem('nombreList'));
-    datosViejos.forEach( item => creandoLi(item));
-}else{
-    var datosViejos = '';
+function mostrarTodaLaLista(){
+    
+    if(localStorage.getItem('nombreList') != null && localStorage.getItem('nombreList') != '[]'){
+        const ul = document.getElementById('linkList');
+        ul.innerText = '';
+        var datosViejos = JSON.parse(localStorage.getItem('nombreList'));
+        datosViejos.forEach( item => creandoLi(item));
+    }else{
+            alert('No existe registro');
+    } 
+    
 }
 
-
+function mensajeEliminar(event){
+    var contItem = event.target.parentNode.querySelector('div p').innerText;
+    var datosViejosE = '';
+    if(localStorage.getItem('nombreList') != null){
+        datosViejosE = JSON.parse(localStorage.getItem('nombreList'));
+        datosViejosE.splice(datosViejosE.indexOf(contItem), 1);
+        localStorage.setItem("nombreList", JSON.stringify(datosViejosE));
+        var li = event.target.parentNode;
+        li.parentNode.remove();
+    }else{
+        console.log(contItem);
+    }
+}
 
 function creandoLi(listItemTodo){
     const ul = document.getElementById('linkList');
@@ -15,7 +33,7 @@ function creandoLi(listItemTodo){
     //botones de eliminar y hecho
     const i = document.createElement('i');
     i.setAttribute('class','eliminar');
-    //i.setAttribute('onclick','');
+    i.setAttribute('onclick','mensajeEliminar(event)');
     i.innerHTML = 'X';
 
     const ii = document.createElement('i');
@@ -39,10 +57,27 @@ function almacenar(nombre,valor){
     localStorage.setItem(nombre,valor);
 }
 
+let listItemTodo = document.querySelector('#itemListToDo');
+listItemTodo.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        guardar();
+    }
+});
 
 
 function guardar(){
     let listItemTodo = document.querySelector('#itemListToDo').value;
+    listItemTodo = listItemTodo.replace("<" , '');
+    listItemTodo = listItemTodo.replace(">" , '');
+
+    //var validarItem = / /g;
+    //var validarItem = /\s+/g
+    var validarItem = /\s\s/;
+
+    if (validarItem.test(listItemTodo)){
+        alert('vacio');
+        return;
+    }
 
     if(listItemTodo != ''){
         if(localStorage.getItem('nombreList') == null){
@@ -54,9 +89,9 @@ function guardar(){
     
         almacenar('nombreList',JSON.stringify(datosViejos));
     
-    
+        document.querySelector('#itemListToDo').value = '';
         creandoLi(listItemTodo);
-        location.reload();
+        //location.reload();
     }
     else{
         alert('Error: llene el campo antes de hacer click');    
@@ -73,16 +108,11 @@ function borrarTodo(){
     ul.innerText = '';//NO ERA LO MISMO QUE PONER innerHTML
 }
 
-
-    //let div = event.path[1].querySelector('div > p');
-    //console.log(div.innerText);
-
-
 function hecho(event){
     console.log(event.path[1]);
 }
 
-
+/*
 const eliminar = document.getElementsByClassName('eliminar'); //obtengo a todos
 Array.from(eliminar).forEach(e => {
     e.addEventListener('click', ()=>{
@@ -103,6 +133,7 @@ Array.from(eliminar).forEach(e => {
     });
 
 });
+*/
 
 
 
@@ -116,16 +147,3 @@ Array.from(eliminar).forEach(e => {
 
 
 
-
-/*
-var hecho = document.getElementsByClassName('done');
-Array.from(hecho).forEach(e => {
-    var padre = e.parentNode.querySelector('div p');
-    var contItem = padre.innerText;
-    console.log(contItem);
-});*/
-
-
-//https://www.youtube.com/watch?v=2hJ1rTANVnk
-//https://www.youtube.com/watch?v=UHaWGC5HCqI
-//https://stackoverflow.com/questions/3871547/js-iterating-over-result-of-getelementsbyclassname-using-array-foreach
