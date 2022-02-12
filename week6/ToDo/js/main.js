@@ -71,24 +71,30 @@ function borrarTodo(){
     ul.innerText = '';//NO ERA LO MISMO QUE PONER innerHTML
 }
 
-function eliminar(){
+
     //let div = event.path[1].querySelector('div > p');
     //console.log(div.innerText);
-    console.log('hice click');
-}
+
 
 function hecho(event){
     console.log(event.path[1]);
 }
 
+
 var eliminar = document.getElementsByClassName('eliminar');
 Array.from(eliminar).forEach(e => {
+    e.addEventListener('click', function(){console.log(e)});
     var num = 0;
     var padre = e.parentNode.querySelector('div p');
     var contItem = padre.innerText;
     console.log(contItem);
     num = num + 1;
 });
+
+function eliminarE(e){
+    e.addEventListener('click', function(){console.log(e)});
+}
+
 
 /*
 var hecho = document.getElementsByClassName('done');
