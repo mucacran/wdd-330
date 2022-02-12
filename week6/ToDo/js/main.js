@@ -6,6 +6,7 @@ if(localStorage.getItem('nombreList') != null){
 }
 
 
+
 function creandoLi(listItemTodo){
     const ul = document.getElementById('linkList');
     const li = document.createElement('li');
@@ -55,6 +56,7 @@ function guardar(){
     
     
         creandoLi(listItemTodo);
+        location.reload();
     }
     else{
         alert('Error: llene el campo antes de hacer click');    
@@ -81,19 +83,38 @@ function hecho(event){
 }
 
 
-var eliminar = document.getElementsByClassName('eliminar');
+const eliminar = document.getElementsByClassName('eliminar'); //obtengo a todos
 Array.from(eliminar).forEach(e => {
-    e.addEventListener('click', function(){console.log(e)});
-    var num = 0;
-    var padre = e.parentNode.querySelector('div p');
-    var contItem = padre.innerText;
-    console.log(contItem);
-    num = num + 1;
+    e.addEventListener('click', ()=>{
+        //console.log(e);
+        var padre = e.parentNode.querySelector('div p');
+        var contItem = padre.innerText;
+        var datosViejosE = '';
+        if(localStorage.getItem('nombreList') != null){
+            datosViejosE = JSON.parse(localStorage.getItem('nombreList'));
+            datosViejosE.splice(datosViejosE.indexOf(contItem), 1);
+            localStorage.setItem("nombreList", JSON.stringify(datosViejosE));
+            var li = e.parentElement;
+            li.parentNode.remove();
+        }else{
+            console.log(contItem);
+        }
+        
+    });
+
 });
 
-function eliminarE(e){
-    e.addEventListener('click', function(){console.log(e)});
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
