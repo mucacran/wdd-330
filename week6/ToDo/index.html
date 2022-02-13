@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="js/main.js" defer></script> -->
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="container bg-gris">
@@ -32,11 +32,16 @@
             <div class="container80 centrarAncho text-center">
                 <button type="submit" onclick="guardar()">Add</button>
                 <button type="submit" onclick="borrarTodo()">Borrar todo</button>
-                <button type="submit" onclick="mostrarTodaLaLista()">Mostrar toda la lista</button>
+                <button id="mostrarTodaLaLista" type="submit" onclick="mostrarTodaLaLista()">Show all list</button>
+            </div>
+            <div class="container80 centrarAncho text-center">
+                <button id="completadas" type="submit" onclick="limpiarTODO()">Clean All</button>
+                <button id="completadas" type="submit" onclick="completadas()">Completed</button>
+                <button id="incompletas" type="submit" onclick="incompletas()">Active</button>
             </div>
             <div class="container80 centrarAncho pb-15px text-center">
-                <button type="submit" onclick="completadas()">Completed</button>
-                <button type="submit" onclick="incompletas()">Active</button>
+                <div id="tasksLeft"></div>
+                <div id="tasksToDo"></div>
             </div>
         </div>
     </main>
@@ -45,10 +50,9 @@
     
 
     <div id="listActividades">
-        <ul id="linkList">
-            
-        </ul>
+        <ul id="linkList"></ul>
     </div>
+    
 
     <div class="text-center pb-50px">
         <a href="../index.html" class="btn btn-secundary">return</a>
@@ -61,6 +65,6 @@
             </h3>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    
 </body>
 </html>
