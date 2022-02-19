@@ -1,0 +1,18 @@
+<script>
+
+
+function ride(){
+    if (window.unicorn) { 
+        ride = function(){
+        // some code that uses the brand new and sparkly unicorn methods
+        return 'Riding on a unicorn is the best!';
+        }
+    } else {
+        ride = function(){
+        // some code that uses the older pony methods
+        return 'Riding on a pony is still pretty good';
+        }
+    }
+    return ride();
+}
+</script>
