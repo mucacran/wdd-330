@@ -144,3 +144,6 @@ function renderOneHikeFull(hike) {
     `;
   return item;
 }
+
+//cree una carpeta alias en xampp
+//https://stackoverflow.com/questions/26623313/how-can-i-add-an-alias-to-apache-in-xampp-v3-2-1
