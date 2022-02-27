@@ -74,7 +74,7 @@ function printPersons(data){
                 <button onclick="completada(event)"> View</button>
                 
                 <div class="d-none mb-15px" id="ver-${i}">
-                    <ul>  
+                    <ul class="mb-15px">  
                         <li>height: ${personass.height}</li>
                         <li>mass: ${personass.mass}</li>
                         <li>hair_color: ${personass.hair_color}</li>
@@ -123,14 +123,10 @@ function consegirJson(url){
 
 function completada(event){
 
-    
     var uno = event.currentTarget.parentNode;
     var dos = uno.querySelector('div');
 
     dos.classList.toggle("d-block");
     dos.classList.toggle("d-none");
-    
-
-
     
 }
