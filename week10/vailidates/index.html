@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- scss -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <label for="mail">I would like you to provide me with an e-mail address:</label>
+        <input type="email" id="mail" name="mail">
+        <button>Submit</button>
+      </form>   
+
+    <section>
+        <form novalidate>
+            <p>
+              <label for="mail1">
+                <span>Please enter an email address:</span>
+                <input type="email" id="mail1" name="mail1" required minlength="8">
+                <span class="error" aria-live="polite"></span>
+              </label>
+            </p>
+            <button>Submit</button>
+          </form>          
+    </section>
+<!-- otor ejemplo -->
+<section id="eje-email2">
+    <form>
+        <p>
+          <label for="mail2">
+              <span>Por favor, introduzca una dirección de correo electrónico: </span>
+              <input type="text" class="mail" id="mail2" name="mail2">
+              <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+        <!-- Algunos navegadores con compatibilidad heredada deben tener el atributo «type»
+             establecido explícitamente en el elemento «button» de «submit»-->
+        <button type="submit">Enviar</button>
+      </form>
+</section>
+
+
+    <div class="text-center pb-50px">
+        <a href="../index.html" class="btn btn-secundary">return</a>
+    </div>
+
+
+
+    <!-- https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation -->
+    <script src="js/js.js"></script>
+</body>
+</html>
