@@ -1,4 +1,4 @@
-function GetCurrentYear()
+export function GetCurrentYear()
 {
     var date = new Date();
     var currentYear = date.getFullYear();
@@ -6,7 +6,7 @@ function GetCurrentYear()
     document.getElementById("copyrightdate").innerHTML = currentYear;
 }
 
-function GetModifiedDate()
+export function GetModifiedDate()
 {
     var modifiedDate = document.lastModified;
 
@@ -14,7 +14,7 @@ function GetModifiedDate()
 }
 
 
-function printMeses()
+export function printMeses()
 {
     var monthName = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     var daysName = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -27,7 +27,7 @@ function printMeses()
     divFecha.innerHTML = fechaPrint;
 }
 
-function UpdateDates()
+export function UpdateDates()
 {
     GetCurrentYear();
     // GetModifiedDate();

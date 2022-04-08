@@ -4,8 +4,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Ultra', serif;
-	color: #011638;
+	font-family: 'Raleway', serif;
+	color: #3a373b;
 	text-transform: uppercase;
 	font-weight: normal;
 	margin: 0;
@@ -19,7 +19,7 @@ p {
 
 * {
 	box-sizing: border-box;
-	font-family: 'Work Sans';
+	font-family: 'Raleway';
 }
 
 figure {
@@ -76,7 +76,7 @@ div.contenedor {
 .navigation li:hover,
 .navigation a:hover {
 	color: #fff;
-	background-color: #FF3366;
+	background-color: #f2d742;
 	font-weight: 600;
 	-webkit-transition: background-color 1s;
 	transition: background-color 1s;
@@ -90,8 +90,8 @@ div.contenedor {
 
 .navigation li.activity,
 .navigation li.activity>a {
-	background-color: #2EC4B6 !important;
-	color: #011638;
+	background-color: #f2d742 !important;
+	color: #3a373b;
 }
 
 /*Este hace que la magia del clik se dé, escribio esto para hacer timpo*/
@@ -105,7 +105,7 @@ div.contenedor {
 
 div.nenuNav,
 nav div ul {
-	background-color: #011638;
+	background-color: #3a373b;
 }
 
 .logo {
@@ -129,8 +129,8 @@ nav div ul {
 	right: 0;
 	top: 0;
 	padding: 15px;
-	background-color: #FF3366;
-	color: #011638 !important;
+	background-color: #f2d742;
+	color: #3a373b !important;
 	cursor: pointer;
 	font-size: 12px;
 }
@@ -142,7 +142,7 @@ nav div ul {
 
 .accion a
 {
-	color: #011638;
+	color: #3a373b;
 	text-decoration: none;
 }
 .mapa {
@@ -167,16 +167,17 @@ nav div ul {
 }
 
 .galeryTemples div p a {
-	background-color: #011638;
+	background-color: #3a373b;
 	padding: 10px;
 	margin: 15px 0;
 	color: #F6F7F8;
 	text-decoration: none;
 	border-radius: 5px;
+	display: block;
 }
 
 .galeryTemples div p a:hover {
-	background-color: #FF3366;
+	background-color: #f2d742;
 }
 
 /******************************************/
@@ -213,7 +214,7 @@ section:nth-child(2n) {
 
 /* *******FOOTER******* */
 footer {
-	background-color: #011638;
+	background-color: #3a373b;
 }
 
 footer h3 {
@@ -310,7 +311,7 @@ input
 	margin: 5px;
 	box-sizing: border-box;
 	border-radius: 5px;
-	background-color: #011638;
+	background-color: #3a373b;
 	color: #F6F7F8;
 	border: 1px solid white;
 	width: 100%;
@@ -325,6 +326,6 @@ fieldset
 {
 	margin: 25px 0;
 	background-color: white;
-	border: 1px solid #011638;
+	border: 1px solid #3a373b;
 	border-radius: 5px;
 }

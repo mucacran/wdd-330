@@ -11,15 +11,15 @@
     <title>TEMPLE INN & SUITES</title>
 
     <!--css-->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 
     <!--js-->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" defer></script>
-    <script src="js/menuAmburgesa.js"></script>
-    <script src="js/ladyload.js" defer></script>
+    <script src="js/main.js" type="module" defer></script>
 
 </head>
 
@@ -35,7 +35,7 @@
                             The best hotel chain
                         </p>
                     </div>
-                    <div class="accion"><a href="reservation.html"> Reservation now</a></div>
+                    <div class="accion"><a href="#reservation.html"> Reservation now</a></div>
                 </div>
             </header>
             <nav class="nav" >
@@ -43,16 +43,16 @@
                     <ul class="navigation">
                         <li><a href="#menu" onclick="toggleMenu()">&#9776; MENU</a></li>
                         <li class="activity"><a href="index.html">HOME</a></li>
-                        <li><a href="service.html">SERVICE</a></li>
-                        <li class="temple"><a href="temples.html" >TEMPLES</a>
+                        <li><a href="#service">SERVICE</a></li>
+                        <li class="temple"><a href="#temples" >TEMPLES</a>
                             <ul class="sub-menuTemple">
-                                <li><a href="templeguayaquil.html">Guaquil - Ecuador</a></li>
-                                <li><a href="templecolombia.html">Barranquilla - Colombia</a></li>
-                                <li><a href="templeperu.html">Lima - Perú</a></li>
-                                <li><a href="templebolivia.html">Cochabamba - Bolivia</a></li>
+                                <li><a href="#templeguayaquil">Guaquil - Ecuador</a></li>
+                                <li><a href="#templecolombia">Barranquilla - Colombia</a></li>
+                                <li><a href="#templeperu">Lima - Perú</a></li>
+                                <li><a href="#templebolivia">Cochabamba - Bolivia</a></li>
                             </ul>
                         </li>
-                        <li><a href="contacs.html">CONTAC</a></li>
+                        <li><a href="#contacs">CONTAC</a></li>
                     </ul>
                 </div>
             </nav>
@@ -122,9 +122,9 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="temples">
             <div class="contenedor">
-                <h3 class="centrar espacioDespues">Other Temples </h3>
+                <h2 class="centrar espacioDespues"><b>Other Temples</b></h2>
                 <div class="galeryTemples">
                     <div>
                         <figure>
@@ -134,7 +134,7 @@
                         </figure>
                         <p>Guayaquil Ecuador Temple</p>
                         <p>
-                            <a href="templeguayaquil.html">more..</a>
+                            <a href="#templeguayaquil">more..</a>
                         </p>
                     </div>
                     <div>
@@ -145,7 +145,7 @@
                         </figure>
                         <p>Barranquilla Colombia Temple. </p>
                         <p>
-                            <a href="templecolombia.html">more..</a>
+                            <a href="#templecolombia">more..</a>
                         </p>
                     </div>
                     <div>
@@ -156,7 +156,7 @@
                         </figure>
                         <p>Lima Perú Temple</p>
                         <p>
-                            <a href="templeperu.html">more..</a>
+                            <a href="#templeperu">more..</a>
                         </p>
                     </div>
                     <div>
@@ -167,12 +167,185 @@
                         </figure>
                         <p>Cochabamba Bolivia Temple </p>
                         <p>
-                            <a href="templebolivia.html">more..</a>
+                            <a href="#templebolivia">more..</a>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+        <div id="service">
+             <h2 class="centrar espacioDespues"><b>SERVICES</b></h2>
+            <section>
+                <div class="contenedor">
+                    <h2>Services Provided at Temple Inn &amp; Suites Locations:</h2>
+                    <hr>
+
+                            <ul>
+                                <li>Access to changing rooms and bathrooms</li>
+                                <li>A playroom and low-cost, short-term babysitting services</li>
+                                <li>Temple history themed reception area</li>
+                                <li>A family search center for ordinance work</li>
+                            </ul>
+                        </div>    
+            </section>
+            <section>
+                <div class="contenedor">
+                    <h2>Free Amenities Included:</h2>
+                    <hr>
+
+                            <ul>
+                                <li>Breakfast</li>
+                                <li>Exercise/workout room</li>
+                                <li>Indoor pool</li>
+                                <li>High speed Wi-Fi &amp; smart TVs</li>
+                                <li>Parking</li>
+                                <li>Temple shuttle</li>
+                                <li>Family ordinance card service</li>
+                            </ul>
+                </div>
+            </section>
+            <section>
+                <div class="contenedor">
+                    <h2>Long Term Accommodations:</h2>
+                    <hr>
+
+                            <ul>
+                                <li>Designed for use by full-time temple missionaries</li>
+                                <li>Includes kitchenette and laundry closet</li>
+                                <li>Special long-term rate discounts available</li>
+                                <li>Competitive pricing</li>
+                            </ul>
+                </div>
+            </section>
+            <section>
+                <div class="contenedor">
+                    <h2>Wedding Receptions:</h2>
+                    <hr>
+
+                            <ul>
+                                <li>Customizable wedding reception hall</li>
+                                <li>Simple catering menu</li>
+                                <li>Kid friendly foods available</li>
+                                <li>Kitchen access for food prep and serving</li>
+                            </ul>
+
+                </div>
+            </section>
+        </div>
+        <!---->
+        <div id="templeguayaquil">  
+            <section class="display-flex content-center flex-xl-column">
+                <div class="contenedor">
+                     <h2 class="centrar espacioDespues">Temple Guayaquil Ecuador</h2>
+                </div>
+                <div class="contenedor temple" id="temple0" data-templo="0"></div>
+            </section>
+            <section>
+                <div class="contenedor">
+                    <h3>Current Weather</h3>
+                    <div class="proClima" id="ecuador-Weather"></div>
+                </div>
+            </section>
+        </div>
+        <div id="templecolombia">
+            <section class="display-flex content-center flex-xl-column">
+                <div class="contenedor">
+                     <h2 class="centrar espacioDespues">Barranquilla Colombia Temple</h2>
+                </div>
+                <div class="contenedor temple" id="temple1" data-templo="1"></div>
+            </section>
+            <section>
+                <div class="contenedor">
+                    <h3>Current Weather</h3>
+                    <div class="proClima" id="colombia-Weather"></div>
+                </div>
+            </section>
+        </div>
+        <div id="templeperu">  
+            <section class="display-flex content-center flex-xl-column">
+                <div class="contenedor">
+                     <h2 class="centrar espacioDespues">Lima - Perú Temple</h2>
+                </div>
+                <div class="contenedor temple" id="temple2" data-templo="2"></div>
+            </section>
+            <section>
+                <div class="contenedor">
+                    <h3>Current Weather</h3>
+                    <div class="proClima" id="peru-Weather"></div>
+                </div>
+            </section>
+        </div>
+        <div id="templebolivia">  
+            <section class="display-flex content-center flex-xl-column">
+                <div class="contenedor">
+                     <h2 class="centrar espacioDespues">Coochabamba Bolivia Temple</h2>
+                </div>
+                <div class="contenedor temple" id="temple3" data-templo="3"></div>
+            </section>
+            <section>
+                <div class="contenedor">
+                    <h3>Current Weather</h3>
+                    <div class="proClima" id="bolivia-Weather"></div>
+                </div>
+            </section>
+        </div>
+        <!---->
+        <div id="contacs">    
+            <section>
+                <div class="contenedor">
+                    <h2>Contact Us</h2>
+                    <hr>
+                    <div>
+                        <div>
+                            <p>We have booking agents available to speak to twenty-four hours a day, six days a week.
+                                If you have any questions about pricing, long-term accommodations, amenities, or anything else, our agents are more than happy to assist you.
+                                We always appreciate feedback about the quality of our hotels. If you encounter any problems during your stay please don't hesitate to reach out to us.</p>
+                            <div><strong>&nbsp;&nbsp;Phone:</strong> <a href="tel:555-555-5555">555-555-5555</a></div>
+                            <address><strong>&nbsp;&nbsp;Address:</strong> 4800 Montgomery Ln #300, Bethesda, MD 20814</address>
+                            <div><strong>&nbsp;&nbsp;Email:</strong> <a href="mailto:contact@templeinnandsuites.com">contact@templeinnandsuites.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="contenedor">                  
+                
+                        <h2 class="">Let's Talk</h2>
+                        <hr class="">
+                        <form method="GET" action="thanks.html">
+                                <fieldset>
+                                    <legend>Contact Information</legend>
+                                    <div>
+                                        <label for="guest-full-name">*Full Name:</label>
+                                        <input pattern="[a-zA-Z ]{5,}" type="text" id="guest-full-name" name="guest-full-name" class="input-required" required="">
+                                    </div>
+                                    <div>
+                                        <label for="guest-email">Email:</label>
+                                        <input type="email" id="guest-email" name="guest-email">
+                                    </div>
+                                    <div>
+                                        <label for="guest-phone">*Phone:</label>
+                                        <input type="tel" id="guest-phone" name="guest-phone" class="input-required" required="">
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Feedback</legend>
+                                    <div>
+                                        <div>
+                                            <label for="contact-message">*How Can We Help?</label>
+                                        </div>      
+                                        <br>
+                                        <div>
+                                            <textarea rows="4" cols="38" id="contact-message" name="contact-message" required=""></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <input type="submit" value="Send" id="submit-button">
+                            </form>
+                    
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="contentbox">

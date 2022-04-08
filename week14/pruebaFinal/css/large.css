@@ -1,4 +1,7 @@
 @media only screen and (min-width: 1028px) {
+    .contenedor.temple{
+        margin: 0 auto !important;
+    }
 
     div.contenedor {
         margin: 0 auto;
@@ -13,7 +16,7 @@
     }
 
     nav {
-        background-color: #011638 !important;
+        background-color: #3a373b !important;
     }
 
     .logoTitulo {

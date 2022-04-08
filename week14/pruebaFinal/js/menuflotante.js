@@ -29,7 +29,7 @@ if('IntersectionObserver' in window) {
 WebFont.load({
   google: {
       families: [
-          'Ultra',
+          'Raleway',
           'Work Sans&display=swap'
       ]
   }

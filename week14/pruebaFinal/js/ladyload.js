@@ -1,3 +1,4 @@
+export default function arrancar(){
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
@@ -28,10 +29,7 @@ if('IntersectionObserver' in window) {
 /******************WEB FONT************** */
 WebFont.load({
   google: {
-      families: [
-          'Work Sans',
-          'Ultra&display=swap',
-      ]
+      families: ['Raleway&display=swap']
   }
 });
 
@@ -60,3 +58,4 @@ window.onscroll = function() {
 }
 /****************************************************** */
 
+}

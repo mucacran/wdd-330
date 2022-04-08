@@ -1,4 +1,5 @@
-function toggleMenu() {
+
+export function toggleMenu() {
 	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 
 	var elementClasses = document.getElementsByClassName("navigation")[0].classList;
@@ -10,12 +11,5 @@ function toggleMenu() {
 	}	
 }
 
-/******************************TAMAÑO DE LA PANTALLA******************** */
-
-var anchoPantalla = window.innerWidth;
-var altoPantalla = document.documentElement.clientHeight;
 
 
-
-console.log(anchoPantalla + ' - ' + altoPantalla);
-/*******************************FIN DL TAMAÑO************************************ */

@@ -164,6 +164,10 @@ nav.main ul li a:hover{
     border: 1px solid #dee2e6;
 }
 
+.border-0{
+    border: 0;
+}
+
 /*borde redondos*/
 .rounded {
     border-radius: 0.25rem;
@@ -220,6 +224,17 @@ nav.main ul li a:hover{
     padding: 15px;
 }
 
+.display-flex{
+    display: flex;
+}
+
+.content-center {
+    justify-content: center !important;
+  }
+
+  .flex-xl-column {
+    flex-direction: column !important;
+  }
 
 
 /*cerrado*/
