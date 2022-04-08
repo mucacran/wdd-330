@@ -1,0 +1,330 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Ultra', serif;
+	color: #011638;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0;
+}
+
+p {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 18px;
+	color: #333333;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Work Sans';
+}
+
+figure {
+	margin: 0;
+}
+
+img[data-src] {
+	filter: blur(0.2em);
+}
+
+img {
+	width: 100%;
+	height: auto;
+
+	filter: blur(0em);
+	transition: filter 1s;
+}
+
+/*****************************/
+div.contenedor {
+	padding: 0 15px;
+}
+
+.contenedor.nemuNav {
+	padding: 0;
+}
+
+.navigation {
+	font-family: 'Work Sans', sans-serif;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin-top: 0px;
+	margin: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+	transition: display 1s;
+}
+
+.navigation a {
+	display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation li:hover,
+.navigation a:hover {
+	color: #fff;
+	background-color: #FF3366;
+	font-weight: 600;
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
+}
+
+.navigation li.activity:hover,
+.navigation li.activity a:hover {
+	color: #333333;
+	background-color: white;
+}
+
+.navigation li.activity,
+.navigation li.activity>a {
+	background-color: #2EC4B6 !important;
+	color: #011638;
+}
+
+/*Este hace que la magia del clik se dé, escribio esto para hacer timpo*/
+.responsive li {
+	display: block;
+	box-sizing: border-box;
+	transition: display 1s;
+}
+
+/******************************************/
+
+div.nenuNav,
+nav div ul {
+	background-color: #011638;
+}
+
+.logo {
+	width: 50px;
+}
+
+.logoTitulo {
+	padding: 20px;
+	text-align: center;
+	position: relative;
+}
+
+.tituloHead,
+.sloganHead {
+	margin: 0;
+	margin-left: 0px;
+}
+
+.accion {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 15px;
+	background-color: #FF3366;
+	color: #011638 !important;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.accion:hover {
+	font-size: 16px;
+	transition: font-size 0.5s;
+}
+
+.accion a
+{
+	color: #011638;
+	text-decoration: none;
+}
+.mapa {
+	border: 0;
+	width: 100%;
+	height: 300px;
+}
+
+/********************** OTROS TEMPLOS*******/
+.galeryTemples {
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+}
+
+.centrar,
+.galeryTemples div p {
+	text-align: center;
+}
+
+.espacioDespues {
+	margin-bottom: 25px;
+}
+
+.galeryTemples div p a {
+	background-color: #011638;
+	padding: 10px;
+	margin: 15px 0;
+	color: #F6F7F8;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.galeryTemples div p a:hover {
+	background-color: #FF3366;
+}
+
+/******************************************/
+
+.iconosContactos {
+	width: 18px;
+}
+
+.socialMediaImg {
+	width: 38px;
+}
+
+.contacto {
+	text-align: center;
+}
+
+.textocentrado {
+	text-align: center;
+}
+
+.contentbox {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+section {
+	padding: 50px 0;
+}
+
+section:nth-child(2n) {
+	background-color: #F6F7F8;
+}
+
+/* *******FOOTER******* */
+footer {
+	background-color: #011638;
+}
+
+footer h3 {
+	color: white;
+	padding-top: 25px;
+}
+
+footer p.textocentrado {
+	margin: 0px;
+	padding: 25px 0;
+}
+
+footer p {
+
+	color: #F6F7F8;
+}
+
+footer hr {
+	border-top: .5px solid rgba(255, 255, 255, 1);
+	width: 80%;
+	height: 0px;
+	/* background-color:  */
+	opacity: 0.1;
+}
+
+/**************Sub Menu******************/
+
+.temple {
+	display: inline-block;
+	position: relative;
+}
+
+.sub-menuTemple {
+	display: none !important;
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	top: 42.4px;
+	z-index: 5;
+	padding: 0;
+}
+
+.temple:hover .sub-menuTemple li:first-child,
+.temple:hover .sub-menuTemple {
+	display: block !important;
+}
+
+/****************************************/
+/*******************Slider*****************/
+/*Parte uno*/
+#slides {
+	position: relative;
+	height: 400px;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: -2;
+	height: 400px;
+	overflow: hidden;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+/* Parte dos */
+.slide {
+	font-size: 40px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/*******************FORM INPUTS************************/
+textarea,
+input
+{
+	padding: 5px;
+	margin: 5px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #011638;
+	color: #F6F7F8;
+	border: 1px solid white;
+	width: 100%;
+}
+
+label
+{
+	width: 200px;
+}
+
+fieldset
+{
+	margin: 25px 0;
+	background-color: white;
+	border: 1px solid #011638;
+	border-radius: 5px;
+}

@@ -1,0 +1,79 @@
+@media only screen and (min-width: 560px) {
+    .navigation {
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: flex;
+        flex: 1 1 100%;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .navigation li a {
+        color: #fff;
+        padding: 30px;
+        width: 100%;
+    }
+    .contenedorMenulogo{
+        position: relative;
+        width:100%;
+        height: 174px;
+    }
+    #navbar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        transition: top 0.3s;
+        z-index: 999;
+        background-color: white;
+    }
+
+    .logoTitulo {
+        display: flex;
+        align-items: center;
+
+        padding: 15px;
+        text-align: left;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 760px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logoTitulo img {
+        text-align: right;
+    }
+
+    .tituloHead,
+    .sloganHead {
+        margin-left: 15px;
+    }
+
+    .accion {
+        top: auto;
+        bottom: 0px;
+    }
+
+    .galeryTemples {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 30px;
+    }
+
+    /******************SUB MENU***************/
+    .sub-menuTemple {
+        top: 78px;
+    }
+
+    /********************************************/
+}

@@ -1,0 +1,189 @@
+{
+  "templos":
+  [
+    {
+      "name": "Templo de Ecuador",
+      "address": "Calle 6ta y Avenida Rodrigo Chávez González Principado de las Lomas Urdesa Norte, Guayaquil",
+      "Telephone": "(+593) 43719200",
+      "CorreoElectrico": "templeguayaquil@lds.fin.ec",
+      "LosServicios": [
+        "Clothing rental available ",
+        "Cafeteria available ",
+        "Patron housing available ",
+        "Distribution center nearby"
+      ],
+      "historia": [
+        "Announced : 31 March 1982",
+        "Groundbreaking : 10 August 1996",
+        "Dedicated : 1 August 1999"
+      ],
+      "calendarioOrdenanza": [
+        "Baptism: 12 jan 2020, 10 AM",
+        "Initiatory: 12 jan 2020, 10 AM",
+        "Endowment: 12 jan 2020, 10 AM",
+        "Sealing: 12 jan 2020, 10 AM"
+      ],
+      "calendarioSecion": [
+        "Morning: 12 jan 2020, 10 AM",
+        "Late: 12 jan 2020, 2 PM",
+        "Night: 12 jan 2020, 8 PM"
+      ],
+      "calendarioSierre":
+      [
+        {
+          "Tuesday":"24 December 2019 (Limited Hours)",
+          "Wednesday": "25 December 2019 (Limited Hours)"
+        },
+        {
+          "Wednesday": "1 January 2020 (Limited Hours)",
+          "Tuesday": "25 February 2020 (Limited Hours)",
+          "Monday": "2 March 2020 - Monday, 16 March 2020",
+          "Saturday": "4 April 2020 (Limited Hours)",
+          "Monday": "14 September 2020 - Monday, 28 September 2020",
+          "Saturday": "3 October 2020 (Limited Hours)",
+          "Thursday": "24 December 2020 (Limited Hours)",
+          "Friday": "25 December 2020 (Limited Hours)"
+        }
+      ],
+      "imageurl": "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/img/Guayaquil-Ecuador-Temple.jpg"
+    },
+    {
+      "name": "Barranquilla Colombia Temple",
+      "address": "Carrera 46 via Al Mar PR 107 Sentido Barranquilla, Cartagena Atlantico, Colombia",
+      "Telephone": "(57) 5-310-0200",
+      "CorreoElectrico": "colombiabarranquilla@lds.fin.ec",
+      "LosServicios": [
+        "Clothing rental available ",
+        "Cafeteria available ",
+        "Patron housing available ",
+        "Distribution center nearby"
+      ],
+      "historia": [
+        "Announced : 31 March 1982",
+        "Groundbreaking : 10 August 1996",
+        "Dedicated : 1 August 1999"
+      ],
+      "calendarioOrdenanza": [
+        "Baptism: 12 jan 2020, 10 AM",
+        "Initiatory: 12 jan 2020, 10 AM",
+        "Endowment: 12 jan 2020, 10 AM",
+        "Sealing: 12 jan 2020, 10 AM"
+      ],
+      "calendarioSecion": [
+        "Morning: 12 jan 2020, 10 AM",
+        "Late: 12 jan 2020, 2 PM",
+        "Night: 12 jan 2020, 8 PM"
+      ],
+      "calendarioSierre":
+      [
+        {
+          "Tuesday":"24 December 2019 (Limited Hours)",
+          "Wednesday": "25 December 2019 (Limited Hours)"
+        },
+        {
+          "Wednesday": "1 January 2020 (Limited Hours)",
+          "Tuesday": "25 February 2020 (Limited Hours)",
+          "Monday": "2 March 2020 - Monday, 16 March 2020",
+          "Saturday": "4 April 2020 (Limited Hours)",
+          "Monday": "14 September 2020 - Monday, 28 September 2020",
+          "Saturday": "3 October 2020 (Limited Hours)",
+          "Thursday": "24 December 2020 (Limited Hours)",
+          "Friday": "25 December 2020 (Limited Hours)"
+        }
+      ],
+      "imageurl": "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/img/colombia.jpg"
+    },
+    {
+      "name": "Lima Perú Temple",
+      "address": "Av. Javier Prado Este 6420 Urb. Santa Patricia La Molina, Lima 12, Peru",
+      "Telephone": "(51) 1-612-7200",
+      "CorreoElectrico": "perulima@lds.fin.ec",
+      "LosServicios": [
+        "Clothing rental available ",
+        "Cafeteria available ",
+        "Patron housing available ",
+        "Distribution center nearby"
+      ],
+      "historia": [
+        "Announced : 31 March 1982",
+        "Groundbreaking : 10 August 1996",
+        "Dedicated : 1 August 1999"
+      ],
+      "calendarioOrdenanza": [
+        "Baptism: 12 jan 2020, 10 AM",
+        "Initiatory: 12 jan 2020, 10 AM",
+        "Endowment: 12 jan 2020, 10 AM",
+        "Sealing: 12 jan 2020, 10 AM"
+      ],
+      "calendarioSecion": [
+        "Morning: 12 jan 2020, 10 AM",
+        "Late: 12 jan 2020, 2 PM",
+        "Night: 12 jan 2020, 8 PM"
+      ],
+      "calendarioSierre":
+      [
+        {
+          "Tuesday":"24 December 2019 (Limited Hours)",
+          "Wednesday": "25 December 2019 (Limited Hours)"
+        },
+        {
+          "Wednesday": "1 January 2020 (Limited Hours)",
+          "Tuesday": "25 February 2020 (Limited Hours)",
+          "Monday": "2 March 2020 - Monday, 16 March 2020",
+          "Saturday": "4 April 2020 (Limited Hours)",
+          "Monday": "14 September 2020 - Monday, 28 September 2020",
+          "Saturday": "3 October 2020 (Limited Hours)",
+          "Thursday": "24 December 2020 (Limited Hours)",
+          "Friday": "25 December 2020 (Limited Hours)"
+        }
+      ],
+      "imageurl": "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/img/peru.jpg"
+    },
+    {
+      "name": "Cochabamba Bolivia Temple",
+      "address": "Av. Melchor Urquidi 1500 Casilla de Correo 1599 Alto Queru Queru, Cochabamba, Bolivia",
+      "Telephone": "(591) 4-429-3161",
+      "CorreoElectrico": "cochabambabolivia@lds.fin.ec",
+      "LosServicios": [
+        "Clothing rental available ",
+        "Cafeteria available ",
+        "Patron housing available ",
+        "Distribution center nearby"
+      ],
+      "historia": [
+        "Announced : 31 March 1982",
+        "Groundbreaking : 10 August 1996",
+        "Dedicated : 1 August 1999"
+      ],
+      "calendarioOrdenanza": [
+        "Baptism: 12 jan 2020, 10 AM",
+        "Initiatory: 12 jan 2020, 10 AM",
+        "Endowment: 12 jan 2020, 10 AM",
+        "Sealing: 12 jan 2020, 10 AM"
+      ],
+      "calendarioSecion": [
+        "Morning: 12 jan 2020, 10 AM",
+        "Late: 12 jan 2020, 2 PM",
+        "Night: 12 jan 2020, 8 PM"
+      ],
+      "calendarioSierre":
+      [
+        {
+          "Tuesday":"24 December 2019 (Limited Hours)",
+          "Wednesday": "25 December 2019 (Limited Hours)"
+        },
+        {
+          "Wednesday": "1 January 2020 (Limited Hours)",
+          "Tuesday": "25 February 2020 (Limited Hours)",
+          "Monday": "2 March 2020 - Monday, 16 March 2020",
+          "Saturday": "4 April 2020 (Limited Hours)",
+          "Monday": "14 September 2020 - Monday, 28 September 2020",
+          "Saturday": "3 October 2020 (Limited Hours)",
+          "Thursday": "24 December 2020 (Limited Hours)",
+          "Friday": "25 December 2020 (Limited Hours)"
+        }
+      ],
+      "imageurl": "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/img/bolivia.jpg"
+    }
+  ]
+}

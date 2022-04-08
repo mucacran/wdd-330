@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This a page about temple"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="img/logo.ico">
+    <title>TEMPLE INN & SUITES</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!--js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" defer></script>
+    <script src="js/menuAmburgesa.js" ></script>
+    <script src="js/menuflotante.js" defer></script> 
+    <script src="js/templos.js" defer></script> 
+</head>
+<body>
+    <div class="contenedorMenulogo">
+        <div id="navbar">
+            <header>
+                <div class="logoTitulo">
+                    <img src="img/logo.png" alt="TEMPLE INN & SUITES" class="logo">
+                    <div>
+                        <h1 class="tituloHead">TEMPLE INN & SUITES</h1>
+                        <p class="sloganHead">
+                            The best hotel chain
+                        </p>
+                    </div>
+                    <div class="accion"><a href="reservation.html"> Reservation now</a></div>
+                </div>
+            </header>
+            <nav class="nav" >
+                <div class="contenedor nemuNav">
+                    <ul class="navigation">
+                        <li><a href="#menu" onclick="toggleMenu()">&#9776; MENU</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li class="temple activity"><a href="temples.html" >TEMPLES</a>
+                            <ul class="sub-menuTemple">
+                                <li><a href="templeguayaquil.html">Guaquil - Ecuador</a></li>
+                                <li><a href="templecolombia.html">Barranquilla - Colombia</a></li>
+                                <li class="activity"><a href="templeperu.html">Lima Perú</a></li>
+                                <li><a href="templebolivia.html">Cochabamba - Bolivia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacs.html">CONTAC</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <main>  
+        <section>
+            <div class="contenedor">
+                 <h2 class="centrar espacioDespues">Lima - Perú Temple</h2>
+            </div>
+            <div class="contenedor" id="temple" data-templo="2"></div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <h3>Current Weather</h3>
+                <div id="peru-Weather"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contentbox">
+            <div>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24807.537198171223!2d-77.10932198237137!3d38.993816646282546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBethesda%2C%20Maryland%2C%20Temple%20Inn%20%26%20Suites!5e0!3m2!1ses-419!2sec!4v1576445265770!5m2!1ses-419!2sec" title="map of temple inn & suites" allowfullscreen=""></iframe>
+            </div>
+            <div class="contenedor contacto">
+                <h3>contact information for the hotel chain</h3>
+                <p>
+                    &#10148; 30 N 1 st E TEMPLE INN & SUITES, ID 86263 <br>
+                    &#9743; 999.999.9999 <br>
+                    &#9993; theweathersite@tws.com
+                </p>
+                <p>
+                    <img class="socialMediaImg" src="img/facebook.png" alt="social media preston">
+                    <img class="socialMediaImg" src="img/pinteres.png" alt="social media preston">
+                    <img class="socialMediaImg" src="img/twiter.png" alt="social media preston">
+                    <img class="socialMediaImg" src="img/wasap.png" alt="social media preston">
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class="textocentrado">
+                Sergio Bravo. © 2019. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
